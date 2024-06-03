@@ -3,31 +3,33 @@
 
 using namespace std;
 
-void check_answer() {
-    ifstream file("exercise_test.txt");
-    if (!file.is_open()) {
-        cerr<<"No se pudo abrir el archivo\n";
-        return;
-    }
-    solution();
+// Definiciones útiles
+#define ll long long
+#define vi vector<int>
+#define vll vector<long long>
+#define pii pair<int, int>
+#define mp make_pair
+#define pb push_back
+#define all(x) (x).begin(), (x).end()
+#define sz(x) (int)(x).size()
+#define F first
+#define S second
+#define rep(i, a, b) for(int i = a; i < (b); ++i)
+#define per(i, a, b) for(int i = a; i >= (b); --i)
+
+void solve() {
+    // Implementa tu solución aquí
 }
 
-void solution() {
-    string a;
-    string b;
-    string rev="";
-    cin>>a>>b;
-    for (char i:b)
-    {
-        rev=i+rev;
-    }
-    if (a==rev)
-    {
-        cout<<"YES";
-    } else {
-        cout<<"NO";
-    }
-}
-int main (int argc, char *argv[]) {
+int main() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
 
+    int t;
+    cin >> t;
+    while (t--) {
+        solve();
+    }
+
+    return 0;
 }
